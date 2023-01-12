@@ -1,0 +1,433 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+@media only screen and (max-width: 768px) {
+  .splash {
+    position: fixed;
+    color: white;
+    width: 100%;
+    height: 100vh;
+    z-index: 1000;
+    background: black;
+    text-align: center;
+    top: 0;
+    left: 0; }
+  .display-none {
+    position: fixed;
+    color: white;
+    width: 100%;
+    height: 100vh;
+    opacity: 0;
+    z-index: -10;
+    background: black;
+    text-align: center;
+    top: 0;
+    left: 0;
+    transition: all 0.5s; }
+  .splash h1 {
+    line-height: 90vh;
+    font-family: 'Poppins', sans-serif; }
+  @keyframes fadeIn {
+    to {
+      opacity: 1; } }
+  .fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards; }
+  @keyframes animate__zoomInDown {}  @keyframes animate__swing {}  .titulo1 {
+    font-family: monospace;
+    color: crimson;
+    text-align: center;
+    margin-top: 50px;
+    animation: swing;
+    animation-duration: 1s;
+    animation-delay: 3s; }
+  .titulo2 {
+    font-family: monospace;
+    color: #dc4914;
+    text-align: center;
+    animation: zoomInDown;
+    animation-duration: 2s;
+    transition-delay: 3s;
+    animation-delay: 3s; }
+  input {
+    text-align: center; }
+  .contenedor {
+    /* border-color: black; */
+    height: 350px;
+    width: 600px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    align-items: center; }
+  .contenedorSelect select {
+    appearance: none;
+    display: inline-block;
+    width: 100px;
+    padding: 7px 10px;
+    height: 42px;
+    outline: 0;
+    border: 0;
+    border-radius: 0;
+    color: #7b7b7b;
+    font-size: 1em;
+    color: #999;
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    position: relative;
+    transition: all 0.25s ease; }
+  .contenedorSelect select:hover {
+    background: rgba(235, 235, 228, 0.837); }
+  /* Se elimina la fecha que por defecto aparece en el desplegable */
+  .contenedorSelect select::-ms-expand {
+    display: none; }
+  .contenedorSelect {
+    max-width: 100%;
+    position: relative;
+    text-align: center; }
+  .contenedorSelect i {
+    position: absolute;
+    right: 242px;
+    top: calc(50% - 13px);
+    width: 16px;
+    height: 16px;
+    display: block;
+    border-left: 4px solid #2ab7c1;
+    border-bottom: 4px solid #2ab7c1;
+    transform: rotate(-45deg);
+    transition: all 0.25s ease; }
+  .contenedorSelect:hover i {
+    margin-top: 3px; }
+  .contenedor2 {
+    /* border-color: black; */
+    height: 350px;
+    width: 600px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    align-items: center; }
+  select ption:hover {
+    transition: all 500ms ease-in; }
+  .columnas {
+    padding: 10px; }
+  #nombreForm:hover {
+    background-color: rgba(235, 235, 228, 0.837);
+    transition: all 500ms ease-in; }
+  #gastosForm:hover {
+    background-color: rgba(235, 235, 228, 0.837);
+    transition: all 500ms ease; }
+  .btnguardar {
+    margin-left: auto;
+    margin-right: auto; }
+  #guardar {
+    margin-bottom: 10px;
+    color: #888888;
+    border: solid 1px #b5b4b4; }
+  .btn-outline-danger {
+    color: #888888;
+    border: solid 1px #b5b4b4; }
+  #guardar:hover {
+    background-color: rgba(235, 235, 228, 0.837);
+    transition: all 500ms ease;
+    color: #888888;
+    border: solid 1px #b5b4b4; }
+  .contenedor .cantidadPersonas {
+    text-align: center;
+    margin-left: 200px;
+    font-family: 'Poppins', sans-serif;
+    color: rgba(240, 165, 51, 0.939); }
+  .col input {
+    margin: 10px; }
+  .col img {
+    margin-top: -60px;
+    margin-bottom: 10px; }
+  #gastosTotales {
+    text-align: center; }
+  #mostrarGastos {
+    text-align: center; }
+  #botonTotalGastos {
+    background-image: var(--bs-gradient);
+    margin-top: 20px; }
+  #mostrar {
+    margin-top: 3px;
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; }
+  #botonGastosCadaUno {
+    text-align: center; }
+  #btnDividir {
+    background-image: var(--bs-gradient);
+    margin-top: 20px; }
+  #mostrarGastosPorPersona {
+    margin-top: 3px;
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; }
+  #tituloGastosParciales {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: rgba(240, 165, 51, 0.939);
+    margin-top: 20px; }
+  #nombres {
+    text-align: center;
+    color: brown;
+    font-family: 'Poppins', sans-serif;
+    display: none; }
+  #nombres img {
+    width: 50px;
+    height: 50px; }
+  #nombres2 {
+    text-align: center;
+    color: brown;
+    font-family: 'Poppins', sans-serif;
+    display: none;
+    transition: all ease-in; }
+  #nombres2 img {
+    width: 50px;
+    height: 50px; }
+  #gastos2 {
+    text-align: center;
+    color: brown;
+    font-family: 'Poppins', sans-serif;
+    display: none; }
+  #gastos2 img {
+    width: 81px;
+    height: 74px; }
+  .btn-success {
+    margin-top: 10px;
+    margin-bottom: 50px; }
+  .parcialNombre {
+    margin: 10px; }
+  .parcialGasto {
+    margin: 10px; }
+  .btnArriba {
+    width: 50px;
+    height: 50px;
+    margin-left: 650px;
+    margin-top: -150px;
+    cursor: pointer; } }
+
+@media only screen and (min-width: 769px) {
+  .splash {
+    position: fixed;
+    color: white;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    background: black;
+    text-align: center;
+    top: 0;
+    left: 0; }
+  .display-none {
+    position: fixed;
+    color: white;
+    width: 100%;
+    height: 100vh;
+    opacity: 0;
+    z-index: -10;
+    background: black;
+    text-align: center;
+    top: 0;
+    left: 0;
+    transition: all 0.5s; }
+  .splash h1 {
+    line-height: 90vh;
+    font-family: 'Poppins', sans-serif; }
+  @keyframes fadeIn {
+    to {
+      opacity: 1; } }
+  .fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards; }
+  @keyframes animate__zoomInDown {}  @keyframes animate__swing {}  /* .titulos{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    } */
+  .titulo1 {
+    font-family: monospace;
+    color: crimson;
+    text-align: center;
+    margin-top: 50px;
+    animation: swing;
+    animation-duration: 1s;
+    animation-delay: 3s; }
+  .titulo2 {
+    font-family: monospace;
+    color: #dc4914;
+    text-align: center;
+    animation: zoomInDown;
+    animation-duration: 2s;
+    animation-delay: 3s;
+    transition-delay: 3s; }
+  input {
+    text-align: center; }
+  .contenedor {
+    /* border-color: black; */
+    height: 350px;
+    width: 600px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    align-items: center; }
+  .contenedorSelect select {
+    appearance: none;
+    display: inline-block;
+    width: 100px;
+    padding: 7px 10px;
+    height: 42px;
+    outline: 0;
+    border: 0;
+    border-radius: 0;
+    color: #7b7b7b;
+    font-size: 1em;
+    color: #999;
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    position: relative;
+    transition: all 0.25s ease; }
+  .contenedorSelect select:hover {
+    background: rgba(235, 235, 228, 0.837); }
+  /* Se elimina la fecha que por defecto aparece en el desplegable */
+  .contenedorSelect select::-ms-expand {
+    display: none; }
+  .contenedorSelect {
+    max-width: 100%;
+    position: relative;
+    text-align: center; }
+  .contenedorSelect i {
+    position: absolute;
+    right: 242px;
+    top: calc(50% - 13px);
+    width: 16px;
+    height: 16px;
+    display: block;
+    border-left: 4px solid #2ab7c1;
+    border-bottom: 4px solid #2ab7c1;
+    transform: rotate(-45deg);
+    transition: all 0.25s ease; }
+  .contenedorSelect:hover i {
+    margin-top: 3px; }
+  .contenedor2 {
+    /* border-color: black; */
+    height: 350px;
+    width: 600px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    align-items: center; }
+  select ption:hover {
+    transition: all 500ms ease-in; }
+  .columnas {
+    padding: 10px; }
+  #nombreForm:hover {
+    background-color: rgba(235, 235, 228, 0.837);
+    transition: all 500ms ease-in; }
+  #gastosForm:hover {
+    background-color: rgba(235, 235, 228, 0.837);
+    transition: all 500ms ease; }
+  .btnguardar {
+    margin-left: auto;
+    margin-right: auto; }
+  #guardar {
+    margin-bottom: 10px;
+    color: #888888;
+    border: solid 1px #b5b4b4; }
+  .btn-outline-danger {
+    color: #888888;
+    border: solid 1px #b5b4b4; }
+  #guardar:hover {
+    background-color: rgba(235, 235, 228, 0.837);
+    transition: all 500ms ease;
+    color: #888888;
+    border: solid 1px #b5b4b4; }
+  .contenedor .cantidadPersonas {
+    text-align: center;
+    margin-left: 200px;
+    font-family: 'Poppins', sans-serif;
+    color: rgba(240, 165, 51, 0.939); }
+  .col input {
+    margin: 10px; }
+  .col img {
+    margin-top: -60px;
+    margin-bottom: 10px; }
+  #gastosTotales {
+    text-align: center; }
+  #mostrarGastos {
+    text-align: center; }
+  #botonTotalGastos {
+    background-image: var(--bs-gradient);
+    margin-top: 20px; }
+  #mostrar {
+    margin-top: 3px;
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; }
+  #botonGastosCadaUno {
+    text-align: center; }
+  #btnDividir {
+    background-image: var(--bs-gradient);
+    margin-top: 20px; }
+  #mostrarGastosPorPersona {
+    margin-top: 3px;
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; }
+  #tituloGastosParciales {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: rgba(240, 165, 51, 0.939);
+    margin-top: 20px; }
+  #nombres {
+    text-align: center;
+    color: brown;
+    font-family: 'Poppins', sans-serif;
+    display: none; }
+  #nombres img {
+    width: 50px;
+    height: 50px; }
+  #nombres2 {
+    text-align: center;
+    color: brown;
+    font-family: 'Poppins', sans-serif;
+    display: none;
+    transition: all ease-in; }
+  #nombres2 img {
+    width: 50px;
+    height: 50px; }
+  #gastos2 {
+    text-align: center;
+    color: brown;
+    font-family: 'Poppins', sans-serif;
+    display: none; }
+  #gastos2 img {
+    width: 81px;
+    height: 74px; }
+  .btn-success {
+    margin-top: 10px;
+    margin-bottom: 50px; }
+  .parcialNombre {
+    margin: 10px; }
+  .parcialGasto {
+    margin: 10px; }
+  .btnArriba {
+    width: 50px;
+    height: 50px;
+    margin-left: 650px;
+    margin-top: -150px;
+    cursor: pointer; } }
